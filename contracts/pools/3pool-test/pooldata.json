@@ -1,0 +1,33 @@
+{
+    "lp_contract": "CurveTokenV3",
+    "lp_constructor": {
+        "name": "Test",
+        "symbol": "Test"
+    },
+    "swap_constructor": {
+        "_A": 200,
+        "_fee": 4000000,
+        "_admin_fee": 0
+    },
+    "coins": [
+        {
+            "name": "WWAT",
+            "decimals": 18,
+            "tethered": false,
+            "underlying_address": "0x219ed1326b82c468f825cbD727dbaf66810a619C"
+        },
+        {
+            "name": "Serg",
+            "decimals": 18,
+            "tethered": false,
+            "underlying_address": "0xa4cf7cCBfE74165DAba4E0b490Fe716060816d3F"
+
+        },
+        {
+            "name": "Alex",
+            "decimals": 18,
+            "tethered": true,
+            "underlying_address": "0x41D062A6AB259E07D96DB88E7BbfC0840f8584c1"
+        }
+    ]
+}

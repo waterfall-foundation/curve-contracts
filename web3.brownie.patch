@@ -1,0 +1,18 @@
+--- web3.bac.py	2022-01-19 11:57:37.004501907 +0000
++++ web3.py	2022-01-19 12:09:05.977698911 +0000
+@@ -11,6 +11,7 @@
+ from web3 import Web3 as _Web3
+ from web3 import WebsocketProvider
+ from web3.gas_strategies.rpc import rpc_gas_price_strategy
++from web3.middleware import geth_poa_middleware
+ 
+ from brownie._config import CONFIG, _get_data_folder
+ from brownie.convert import to_address
+@@ -207,6 +208,7 @@
+ 
+ 
+ web3 = Web3()
++web3.middleware_onion.inject(geth_poa_middleware, layer=0)
+ web3.eth.set_gas_price_strategy(rpc_gas_price_strategy)
+ 
+ try:
