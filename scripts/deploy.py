@@ -81,29 +81,4 @@ def main():
     LiquidityGaugeV3 = load_project("curvefi/curve-dao-contracts@1.2.0").LiquidityGaugeV3
     LiquidityGaugeV3.deploy(token, MINTER, GAUGE_OWNER, _tx_params())
 
-    # deploy the zap
-    zap_name = next((i.stem for i in contracts_path.glob(f"{POOL_NAME}/Deposit*")), None)
-    if zap_name is not None:
-        zap_deployer = getattr(project, zap_name)
-
-        abi = next(i["inputs"] for i in zap_deployer.abi if i["type"] == "constructor")
-        args = {
-            "_coins": wrapped_coins,
-            "_underlying_coins": underlying_coins,
-            "_token": token,
-            "_pool": swap,
-            "_curve": swap,
-        }
-        deployment_args = [args[i["name"]] for i in abi] + [_tx_params()]
-
-        zap_deployer.deploy(*deployment_args)
-
-    # deploy the rate calculator
-    rate_calc_name = next(
-        (i.stem for i in contracts_path.glob(f"{POOL_NAME}/RateCalculator*")), None
-    )
-    if rate_calc_name is not None:
-        rate_calc_deployer = getattr(project, rate_calc_name)
-        rate_calc_deployer.deploy(_tx_params())
-
     print(f"Gas used in deployment: {(balance - DEPLOYER.balance()) / 1e18:.4f} ETH")

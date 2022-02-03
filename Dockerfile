@@ -9,5 +9,3 @@ RUN brownie networks add Waterfall waterfall-test host=https://rpc.waterfall.net
 
 COPY web3.brownie.patch /usr/local/lib/python3.8/site-packages/brownie/network/web3.patch
 RUN cd /usr/local/lib/python3.8/site-packages/brownie/network ; patch -u web3.py -i web3.patch ; cd -
-
-COPY acc.json acc.json
