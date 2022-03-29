@@ -1,8 +1,8 @@
 {
     "lp_contract": "CurveTokenV3",
     "lp_constructor": {
-        "name": "Test",
-        "symbol": "Test"
+        "name": "SevenPool",
+        "symbol": "Seven"
     },
     "swap_constructor": {
         "_A": 200,
