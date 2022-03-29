@@ -28,6 +28,42 @@
             "decimals": 18,
             "tethered": true,
             "underlying_address": "0x41D062A6AB259E07D96DB88E7BbfC0840f8584c1"
+        },
+        {
+            "name":"Nehemia",
+            "underlying_address":"0xAec7FCD1C2D7BFE7620765C273923EDcD913E6C8",
+            "decimals":18,
+            "tethered": false
+        },
+        {
+            "name":"Richard",
+            "underlying_address":"0x2E035C1Fcb180A5ad410c5507E03d740F7Fb5A50",
+            "decimals":18,
+            "tethered": false
+        },
+        {
+            "name":"Luke",
+            "underlying_address":"0x9260a1c9b4edcC56629c295dEE44Ed9126C6020E",
+            "decimals":18,
+            "tethered": false
+        },
+        {
+            "name":"Pedro",
+            "underlying_address":"0xEcF9aA721B1681ac340Bb71b2C815360349736d3",
+            "decimals":18,
+            "tethered": false
+        },
+        {
+            "name":"Robert",
+            "underlying_address":"0x0E92c9a5598c66DCf4D1fa152eA2aBf04d8478EF",
+            "decimals":18,
+            "tethered": false
+        },
+        {
+            "name":"Geoff",
+            "underlying_address":"0x052e57ce096b1061bE8C25aF4c3bFF53552FcC48",
+            "decimals":18,
+            "tethered": false
         }
     ]
 }

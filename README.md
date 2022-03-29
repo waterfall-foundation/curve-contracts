@@ -34,3 +34,5 @@
 ### Edit deploy script
 * change name of contract path
 * also, you can change account used for deploy
+* If you changed the authorization account in the _tx_params object, change the parameter from, to the address of the new account
+* You also need to change the provider, to the provider of the current network here: `web3 = Web3(Web3.HTTPProvider('https://rpc.waterfall.network/rpc'))`
