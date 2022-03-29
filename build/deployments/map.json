@@ -1,0 +1,23 @@
+{
+  "3": {
+    "CurveTokenV3": [
+      "0x32519c2fE61c170E8c35e68d1f4bcFeDc8bD2925"
+    ]
+  },
+  "333777333": {
+    "CurveTokenV3": [
+      "0xf6e8f214a9fd8c5F714fc92155a29293CfF63E6C",
+      "0xE08dcCAdE7caeB483508F9c5eb112a5ABa30368c",
+      "0xeaE548390d55C06604E5B92BC663dcb30823008A",
+      "0xA2b08EdB08D98B2c3da234e31B940f7F37E45fD9",
+      "0x4706Da105d58A49C67b444a13E9aE6D57Fec69F9"
+    ],
+    "StableSwap3Pool": [
+      "0x509a0aE762A9C32DE1d0F2E78A81CE703479fB6F",
+      "0xbe45E540248A3dD826a3d2A7b426Db78718A0F7E"
+    ],
+    "StableSwap3Pooltest": [
+      "0xB25EC166697f656e8A0962C520788cC75aC89249"
+    ]
+  }
+}
